@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.authorization.AuthorizationFragment"
+    android:background="@color/light_application_color">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="Sign in"
+        app:layout_constraintEnd_toEndOf="@+id/editTextLogin"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextLogin"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword"
+        android:background="@drawable/separator"/>
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        style="@style/HintTextEdit"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/separator"
+        android:ems="10"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/editTextLogin"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextLogin"
+        app:layout_constraintTop_toBottomOf="@+id/editTextLogin" />
+
+    <EditText
+        android:id="@+id/editTextLogin"
+        style="@style/HintTextEdit"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="356dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/separator"
+        android:ems="10"
+        android:hint="login"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonSignUp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Sign up"
+        app:layout_constraintEnd_toEndOf="@+id/btn"
+        app:layout_constraintStart_toStartOf="@+id/btn"
+        app:layout_constraintTop_toBottomOf="@+id/btn"
+        android:background="@drawable/separator"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="184dp"
+        android:text="Welcome to\nCandida"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="@+id/editTextLogin"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextLogin"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

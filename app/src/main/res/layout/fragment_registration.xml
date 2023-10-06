@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.authorization.RegistrationFragment"
+    android:background="@color/light_application_color"
+    >
+
+    <EditText
+        android:id="@+id/editTextForename"
+        style="@style/HintTextEdit"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="216dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/separator"
+        android:ems="10"
+        android:hint="forename"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextSurname"
+        style="@style/HintTextEdit"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/separator"
+        android:ems="10"
+        android:hint="surname"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/editTextForename"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextForename"
+        app:layout_constraintTop_toBottomOf="@+id/editTextForename" />
+
+    <EditText
+        android:id="@+id/editTextLoginRegistration"
+        style="@style/HintTextEdit"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="login"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/editTextEmailAddress"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextEmailAddress"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEmailAddress" />
+
+    <EditText
+        android:id="@+id/editTextEmailAddress"
+        style="@style/HintTextEdit"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="@+id/editTextPhone"
+        app:layout_constraintStart_toStartOf="@+id/editTextPhone"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPhone" />
+
+    <EditText
+        android:id="@+id/editTextPasswordRegistration"
+        style="@style/HintTextEdit"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/editTextLoginRegistration"
+        app:layout_constraintStart_toStartOf="@+id/editTextLoginRegistration"
+        app:layout_constraintTop_toBottomOf="@+id/editTextLoginRegistration" />
+
+    <TextView
+        android:id="@+id/textViewRegistration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="10dp"
+        android:text="Register in the Candida app"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonSignUpRegistration"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:text="sign up"
+        app:layout_constraintEnd_toEndOf="@+id/editTextPasswordRegistration"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextPasswordRegistration"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPasswordRegistration" />
+
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="phone"
+        style="@style/HintTextEdit"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="@+id/editTextSurname"
+        app:layout_constraintStart_toStartOf="@+id/editTextSurname"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSurname" />
+</androidx.constraintlayout.widget.ConstraintLayout>

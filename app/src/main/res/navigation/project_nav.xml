@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/project_nav"
+    app:startDestination="@id/projectFragment">
+
+    <fragment
+        android:id="@+id/projectFragment"
+        android:name="com.example.candida.view.taskproject.ProjectFragment"
+        android:label="fragment_project"
+        tools:layout="@layout/fragment_project" >
+        <action
+            android:id="@+id/action_projectFragment_to_kanbanBoard"
+            app:destination="@id/kanbanBoard" />
+        <action
+            android:id="@+id/action_projectFragment_to_userProfileFragment"
+            app:destination="@id/userProfileFragment" />
+        <action
+            android:id="@+id/action_projectFragment_to_createProjectFragment"
+            app:destination="@id/createProjectFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/kanbanBoard"
+        android:name="com.example.candida.view.taskproject.KanbanBoard"
+        android:label="fragment_kanban_board"
+        tools:layout="@layout/fragment_kanban_board" >
+        <action
+            android:id="@+id/action_kanbanBoard_to_cardViewColumn"
+            app:destination="@id/cardViewColumn" />
+        <action
+            android:id="@+id/action_kanbanBoard_to_projectInfoFragment"
+            app:destination="@id/projectInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cardViewColumn"
+        android:name="com.example.candida.view.taskproject.cardViewColumn"
+        android:label="fragment_card_view_column"
+        tools:layout="@layout/fragment_card_view_column" >
+        <action
+            android:id="@+id/action_cardViewColumn_to_addParticipantCardFragment"
+            app:destination="@id/addParticipantCardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userProfileFragment"
+        android:name="com.example.candida.view.taskproject.UserProfileFragment"
+        android:label="fragment_user_profile"
+        tools:layout="@layout/fragment_user_profile" />
+    <fragment
+        android:id="@+id/createProjectFragment"
+        android:name="com.example.candida.view.taskproject.CreateProjectFragment"
+        android:label="fragment_create_project"
+        tools:layout="@layout/fragment_create_project" >
+        <action
+            android:id="@+id/action_createProjectFragment_to_projectFragment"
+            app:destination="@id/projectFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/projectInfoFragment"
+        android:name="com.example.candida.view.taskproject.ProjectInfoFragment"
+        android:label="fragment_project_info"
+        tools:layout="@layout/fragment_project_info" >
+        <action
+            android:id="@+id/action_projectInfoFragment_to_addParticipantFragment"
+            app:destination="@id/addParticipantFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addParticipantFragment"
+        android:name="com.example.candida.view.taskproject.addParticipantFragment"
+        android:label="fragment_add_participant"
+        tools:layout="@layout/fragment_add_participant" />
+    <fragment
+        android:id="@+id/addParticipantCardFragment"
+        android:name="com.example.candida.view.taskproject.AddParticipantCardFragment"
+        android:label="fragment_add_participant_card"
+        tools:layout="@layout/fragment_add_participant_card" />
+</navigation>

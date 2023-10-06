@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:foreground="?attr/selectableItemBackground"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+            android:layout_marginTop="300dp"
+            android:layout_marginBottom="45dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <EditText
+                android:id="@+id/editTextNameColumn"
+                style="@style/HintTextEdit"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/separator"
+                android:ems="10"
+                android:focusableInTouchMode="true"
+                android:inputType="textPersonName"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/mMenu"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignBottom="@+id/editTextNameColumn"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="-7dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/ic_menu_more" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycle_cards"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteY="20dp"
+                tools:listitem="@layout/recycle_card_item">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/linearAddCards"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/imageViewAddCard"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/ic_add"
+                app:tint="@color/main_application_color" />
+
+            <EditText
+                android:id="@+id/editTextAddCard"
+                style="@style/HintTextEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginEnd="16dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Название карточки"
+                android:inputType="textPersonName"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

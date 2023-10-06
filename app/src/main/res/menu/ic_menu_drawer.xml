@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Просмотр профиля"></item>
+    <item android:title="Мои карточки"></item>
+    <item android:title="Настройки"></item>
+    <item android:title="Помощь"></item>
+</menu>
