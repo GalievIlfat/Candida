@@ -10,5 +10,11 @@
 - Назначение ответственного за карточку;
 - Просмотр доски.
 
-![image](https://github.com/GalievIlfat/Candida/assets/74199502/9971c97b-82e0-41c2-b26e-7708edce8356)
-![image](https://github.com/GalievIlfat/Candida/assets/74199502/81008ec0-78ed-405e-8513-d580f69da180)
+
+
+
+<img src="https://github.com/GalievIlfat/Candida/assets/74199502/9971c97b-82e0-41c2-b26e-7708edce8356" width="270" height="600">
+<img src="https://github.com/GalievIlfat/Candida/assets/74199502/81008ec0-78ed-405e-8513-d580f69da180" width="270" height="600">
+<img src="https://github.com/GalievIlfat/Candida/assets/74199502/391f2520-b663-4367-b76a-03bc26640e1c" width="270" height="600">
+
+
